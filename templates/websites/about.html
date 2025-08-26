@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}About | YourBrand{% endblock %}
+{% block page_heading %}About Us{% endblock %}
+{% block page_subheading %}Learn more about who we are and what we do{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h2 class="mb-4">Our Story</h2>
+      <p class="lead">
+        Welcome to <strong>YourBrand</strong>! We are passionate about delivering
+        quality products and services to our customers. Our mission is to create
+        meaningful impact through innovation and excellence.
+      </p>
+      <p>
+        Founded in 2025, we’ve been working tirelessly to make sure our clients
+        get the best value possible. Thank you for being part of our journey!
+      </p>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="{% static 'images/profile1.avif' %}" alt="About Us"
+           class="img-fluid rounded shadow-lg">
+    </div>
+  </div>
+</div>
+{% endblock %}

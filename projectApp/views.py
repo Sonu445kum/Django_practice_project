@@ -1,7 +1,18 @@
 from django.shortcuts import render
-
-# Create your views here.
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("Hello, Geeks! Welcome to your first Django app.")
+# Home page view
+def home(request):
+    return render(request, "home.html")
+
+# About page view
+def about(request):
+    return render(request, "about.html")
+
+# Contact page view
+def contact(request):
+    return render(request, "contact.html")
+
+# Your existing view for projectApp
+def main_page(request):
+    return render(request, "projectApp/main.html")

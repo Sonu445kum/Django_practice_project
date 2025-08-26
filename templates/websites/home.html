@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}Home | YourBrand{% endblock %}
+
+{% block page_heading %}Welcome to YourBrand{% endblock %}
+{% block page_subheading %}Empowering your journey with innovation and excellence.{% endblock %}
+
+{% block content %}
+
+  <!-- Hero Section -->
+  <div class="bg-light rounded-3 p-5 mb-5 shadow-sm">
+    <div class="container-fluid py-5 text-center">
+      <h1 class="display-5 fw-bold">Discover Something Amazing</h1>
+      <p class="fs-5 text-muted">We bring you the best services to grow your ideas into reality.</p>
+      <a href="{% url 'about' %}" class="btn btn-primary btn-lg mt-3 px-4">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="row text-center mb-5">
+    <h2 class="mb-4">What We Offer</h2>
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+          <i class="bi bi-lightning-charge-fill text-primary fs-1 mb-3"></i>
+          <h5 class="card-title">Fast Performance</h5>
+          <p class="card-text text-muted">Experience blazing fast services optimized for your needs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+          <i class="bi bi-people-fill text-success fs-1 mb-3"></i>
+          <h5 class="card-title">Trusted Community</h5>
+          <p class="card-text text-muted">Join our growing family of satisfied clients and partners.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+          <i class="bi bi-shield-lock-fill text-danger fs-1 mb-3"></i>
+          <h5 class="card-title">Secure & Reliable</h5>
+          <p class="card-text text-muted">We prioritize your privacy and ensure complete security.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="p-5 mb-5 bg-primary text-white rounded-3 shadow-sm text-center">
+    <h2 class="fw-bold">Ready to Get Started?</h2>
+    <p class="mb-4">Join us today and take your first step toward success.</p>
+    <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-4">Contact Us</a>
+  </div>
+
+{% endblock %}
